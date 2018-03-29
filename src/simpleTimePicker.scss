@@ -1,0 +1,127 @@
+#datetime-selector {
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  }
+
+  .icon-close-wrapper {
+    position: relative;
+    margin-left: -20px;
+
+    .icon-close {
+      font-size: 10px;
+      padding: 3px;
+      cursor: pointer;
+
+      &:active {
+        color: grey;
+      }
+    }
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .placeholderInput-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .placeholderInput {
+      font-size: 14px;
+      padding: 3px 5px;
+      outline: none;
+      border: 1px solid #000;
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+      box-sizing: border-box;
+
+      &::selection {
+        background: white; /* WebKit/Blink Browsers */
+      }
+      &::-moz-selection {
+        background: white; /* Gecko Browsers */
+      }
+    }
+  }
+
+  .selector-wrap {
+    margin: 5px 0 0 0;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+
+      &.flex-zero {
+        flex: 0;
+      }
+
+      .seperator {
+        position: relative;
+        left: 11.5px;
+      }
+
+      .can_select {
+        width: 100%;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-size: 14px;
+      }
+
+      .control-wrap {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        width: 18px;
+
+        .caret-wrap {
+          cursor: pointer;
+          font-size: 10px;
+          text-align: center;
+          padding: 3px 0px;
+          border-left: 1px solid;
+          border-right: 1px solid;
+
+          &:hover {
+            background: #eee;
+          }
+
+          &:active {
+            svg {
+              color: grey
+            }
+          }
+
+          &:last-child {
+            border-top: 1px solid;
+          }
+        }
+      }
+
+      &.ampm {
+        span {
+          width: 25px;
+          padding: 0 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

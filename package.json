@@ -1,24 +1,27 @@
 {
-  "name": "website",
+  "author": "eldyvoon",
+  "name": "simple-timepicker-react",
+  "description": "A simple timepicker React component, imitate html5 datetime-local.",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "lib/simple-timepicker.js",
   "scripts": {
-    "start": "npm run build",
-    "build": "webpack-dev-server --env=dev --progress --profile --colors",
-    "prod": "npm run clean && webpack --env=prod --progress --profile --colors",
-    "clean": "rimraf ./dist/*"
+    "start": "webpack-dev-server --env=dev --progress --profile --colors",
+    "build-lib": "npm run clean && webpack --env=prod --progress --profile --colors",
+    "clean": "rimraf ./lib/*"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "timepicker",
+    "time picker",
+    "datetime-local"
+  ],
   "license": "ISC",
   "dependencies": {
-    "prop-types": "^15.6.0",
+    "prop-types": "^15.6.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
     "react-router-dom": "^4.1.2",
-    "styled-components": "^2.1.2"
+    "moment": "^2.21.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -29,7 +32,6 @@
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.5",
-    "enzyme": "^2.9.1",
     "expect": "^1.20.2",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
@@ -37,7 +39,6 @@
     "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^3.3.1",
     "jquery": "^3.2.1",
-    "mocha": "^3.5.0",
     "node-sass": "^4.5.3",
     "react-addons-test-utils": "^15.6.0",
     "react-routes": "^0.2.6",

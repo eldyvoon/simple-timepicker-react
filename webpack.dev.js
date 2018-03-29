@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: {  index: './src/app/index.js'
+  entry: {  index: './src/index.js'
   },
   output: {
     path: path.join(__dirname, 'public'),
