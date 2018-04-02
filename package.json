@@ -2,7 +2,7 @@
   "author": "eldyvoon",
   "name": "simple-timepicker-react",
   "description": "A simple timepicker React component, imitate html5 datetime-local.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "lib/simple-timepicker.js",
   "scripts": {
     "start": "webpack-dev-server --env=dev --progress --profile --colors",
@@ -17,12 +17,14 @@
   ],
   "license": "ISC",
   "dependencies": {
+    "moment": "^2.21.0",
     "prop-types": "^15.6.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react-dom": "^16.3.0",
     "react-icons": "^2.2.5",
-    "react-router-dom": "^4.1.2",
-    "moment": "^2.21.0"
+    "react-router-dom": "^4.1.2"
+  },
+  "peerDependencies": {
+   "react": "^15.5.4 || ^16.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -40,9 +42,6 @@
     "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^3.3.1",
     "node-sass": "^4.5.3",
-    "react-addons-test-utils": "^15.6.0",
-    "react-routes": "^0.2.6",
-    "react-test-renderer": "^15.6.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.5.5",
