@@ -1,6 +1,6 @@
 ## Simple TimePicker React
 <div align="center">
-  <img src="demo.gif" alt="demo">
+  <img src="demo.gif#2" alt="demo">
   <br><br>
 </div>
 
