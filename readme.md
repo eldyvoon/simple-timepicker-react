@@ -1,8 +1,5 @@
 ## Simple TimePicker React
-<div align="center">
-  <img src="demo.gif#2" alt="demo">
-  <br><br>
-</div>
+<img src="demo.gif#2" alt="demo">
 
 ## Usage
 `npm i simple-timepicker-react`
