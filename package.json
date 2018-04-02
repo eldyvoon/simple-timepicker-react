@@ -10,6 +10,7 @@
     "clean": "rimraf ./lib/*"
   },
   "keywords": [
+    "react",
     "timepicker",
     "time picker",
     "datetime-local"
@@ -38,7 +39,6 @@
     "font-awesome": "^4.7.0",
     "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^3.3.1",
-    "jquery": "^3.2.1",
     "node-sass": "^4.5.3",
     "react-addons-test-utils": "^15.6.0",
     "react-routes": "^0.2.6",

@@ -24,5 +24,6 @@ Options
 | placeholderText  | String  | --:--  |
 | hourInterval  | Number  | 1  |
 | minuteInterval  | Number  | 1  |
+| visiblePicker | Bool | false |
 | onChange  | Func  |   |
 | value | String | null

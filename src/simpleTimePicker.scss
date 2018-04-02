@@ -1,4 +1,6 @@
 #datetime-selector {
+  position: relative;
+
   .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -13,9 +15,11 @@
     margin-left: -20px;
 
     .icon-close {
-      font-size: 10px;
+      font-size: 9px;
       padding: 3px;
       cursor: pointer;
+      position: relative;
+      top: -1px;
 
       &:active {
         color: grey;
@@ -56,11 +60,15 @@
 
   .selector-wrap {
     margin: 5px 0 0 0;
-    width: 100%;
     border: 1px solid;
     display: flex;
     justify-content: space-evenly;
     box-sizing: border-box;
+
+    position: absolute;
+    top: 25px;
+    z-index: 999;
+    background: white;
     
     > div {
       display: flex;

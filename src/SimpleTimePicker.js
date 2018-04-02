@@ -163,11 +163,6 @@ class SimpleTimePicker extends React.Component {
   }
 
   handleOnKeyDown(e, type) {
-    let { time } = this.state
-    if(!time) {
-      time = moment('12:00 AM', 'hh:mm A')
-    }
-
     //enter key
     if(e.keyCode === 13){
       this.handleToggleSelector()
@@ -192,19 +187,21 @@ class SimpleTimePicker extends React.Component {
 
     return (
       <div id="datetime-selector" style={{ width: containerWidth }}>
+
         <div className="placeholderInput-wrap">
           <input
             className="placeholderInput"
             type="text"
             style={{ width: containerWidth }}
             value={time ? time.format("hh:mm A") : placeholderText}
-            defaultValue={placeholderText}
             onClick={() => this.handleToggleSelector()}
+            readOnly
           />
           {time && <div className="icon-close-wrapper" onClick={()=>this.handleClearTime()}>
             <FaClose className="icon-close"/>
           </div>}
         </div>
+
         <div ref={node => this.node = node}
           className={
             "selector-wrap noselect " + (selectorVisible ? "show" : "hide")
@@ -218,11 +215,10 @@ class SimpleTimePicker extends React.Component {
               onChange={e => this.handleKeyDownPickerInput(e, "hour")}
               className="can_select"
               type="text"
-              value={this.getHour()}
+              value={this.getHour() || ''}
               onKeyDown={e => this.handleOnKeyDown(e, "hour")}
             />
           </div>
-
           <div className="flex-zero">
             <div className="control-wrap">
               <div
@@ -247,11 +243,10 @@ class SimpleTimePicker extends React.Component {
               onChange={e => this.handleKeyDownPickerInput(e, "minute")}
               className="can_select"
               type="text"
-              value={this.getMinute()}
+              value={this.getMinute() || ''}
               onKeyDown={e => this.handleOnKeyDown(e, "minute")}
             />
           </div>
-
           <div className="flex-zero">
             <div className="control-wrap">
               <div
@@ -269,7 +264,6 @@ class SimpleTimePicker extends React.Component {
               </div>
             </div>
           </div>
-
           <div className="ampm" onClick={() => this.toggleAmPm()}>
             <span>{this.getAmPm()}</span>
           </div>
