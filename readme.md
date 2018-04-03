@@ -20,10 +20,11 @@ Options
 |  prop |   type | default value |
 | ------------- | ------------- | ------------- |
 | width  | Number  | 200  |
-| fluidWidth  | Bool  | false  |
+| fluidWidth  | Boolean  | false  |
 | placeholderText  | String  | --:--  |
 | hourInterval  | Number  | 1  |
 | minuteInterval  | Number  | 1  |
-| visiblePicker | Bool | false |
+| visiblePicker | Boolean | false |
 | onChange  | Func  |   |
 | value | String | null
+| disabled | Boolean | false

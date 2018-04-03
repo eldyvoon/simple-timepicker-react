@@ -181,7 +181,7 @@ class SimpleTimePicker extends React.Component {
 
   render() {
     const { time, selectorVisible } = this.state
-    const { placeholderText, fluidWidth, width } = this.props
+    const { placeholderText, fluidWidth, width, disabled } = this.props
 
     const containerWidth = fluidWidth ? '100%' : width
 
@@ -196,6 +196,7 @@ class SimpleTimePicker extends React.Component {
             value={time ? time.format("hh:mm A") : placeholderText}
             onClick={() => this.handleToggleSelector()}
             readOnly
+            disabled={disabled}
           />
           {time && <div className="icon-close-wrapper" onClick={()=>this.handleClearTime()}>
             <FaClose className="icon-close"/>
@@ -281,7 +282,8 @@ SimpleTimePicker.propTypes = {
   hourInterval: PropTypes.number,
   minuteInterval: PropTypes.number,
   onChange: PropTypes.func,
-  value: PropTypes.string
+  value: PropTypes.string,
+  disabled: PropTypes.bool
 }
 
 SimpleTimePicker.defaultProps = {
@@ -292,7 +294,8 @@ SimpleTimePicker.defaultProps = {
   hourInterval: 1,
   minuteInterval: 1,
   onChange: function(){},
-  value: null
+  value: null,
+  disabled: false
 };
 
 export default SimpleTimePicker

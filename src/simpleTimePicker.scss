@@ -49,6 +49,10 @@
       text-shadow: 0 0 0 #000;
       box-sizing: border-box;
 
+      &:disabled {
+        opacity: 0.4;
+      }
+
       &::selection {
         background: white; /* WebKit/Blink Browsers */
       }

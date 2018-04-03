@@ -58,7 +58,7 @@ class App extends Component {
             </tr>
             <tr>
               <td>fluidWidth</td>
-              <td>Bool</td>
+              <td>Boolean</td>
               <td>false</td>
             </tr>
             <tr>
@@ -78,7 +78,7 @@ class App extends Component {
             </tr>
             <tr>
               <td>visiblePicker</td>
-              <td>Bool</td>
+              <td>Boolean</td>
               <td>false</td>
             </tr>
             <tr>
@@ -90,6 +90,11 @@ class App extends Component {
               <td>value</td>
               <td>String</td>
               <td>null</td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>Boolean</td>
+              <td>false</td>
             </tr>
           </tbody>
         </table>
