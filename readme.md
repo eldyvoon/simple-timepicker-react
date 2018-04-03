@@ -20,7 +20,7 @@ Options
 |  prop |   type | default value |
 | ------------- | ------------- | ------------- |
 | width  | Number  | 200  |
-| fuildWdith  | Bool  | false  |
+| fluidWidth  | Bool  | false  |
 | placeholderText  | String  | --:--  |
 | hourInterval  | Number  | 1  |
 | minuteInterval  | Number  | 1  |

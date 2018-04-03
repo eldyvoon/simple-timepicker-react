@@ -181,9 +181,9 @@ class SimpleTimePicker extends React.Component {
 
   render() {
     const { time, selectorVisible } = this.state
-    const { placeholderText, fuildWdith, width } = this.props
+    const { placeholderText, fluidWidth, width } = this.props
 
-    const containerWidth = fuildWdith ? '100%' : width
+    const containerWidth = fluidWidth ? '100%' : width
 
     return (
       <div id="datetime-selector" style={{ width: containerWidth }}>
@@ -275,7 +275,7 @@ class SimpleTimePicker extends React.Component {
 
 SimpleTimePicker.propTypes = {
   width: PropTypes.number,
-  fuildWdith: PropTypes.bool,
+  fluidWidth: PropTypes.bool,
   placeholderText: PropTypes.string,
   visiblePicker: PropTypes.bool,
   hourInterval: PropTypes.number,
@@ -286,7 +286,7 @@ SimpleTimePicker.propTypes = {
 
 SimpleTimePicker.defaultProps = {
   width: 200,
-  fuildWdith: false,
+  fluidWidth: false,
   placeholderText: '--:--',
   visiblePicker: false,
   hourInterval: 1,

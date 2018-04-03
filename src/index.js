@@ -57,7 +57,7 @@ class App extends Component {
               <td>200</td>
             </tr>
             <tr>
-              <td>fuildWdith</td>
+              <td>fluidWidth</td>
               <td>Bool</td>
               <td>false</td>
             </tr>
