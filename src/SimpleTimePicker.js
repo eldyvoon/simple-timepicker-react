@@ -125,7 +125,7 @@ class SimpleTimePicker extends React.Component {
   }
 
   handleClickedPickerInput(e) {
-    e.target.select()
+    e.target.focus()
   }
 
   handleKeyDownPickerInput(e, type) {
@@ -150,7 +150,7 @@ class SimpleTimePicker extends React.Component {
   }
 
   hightlightHourInput() {
-    this.hourInputNode.select()
+    this.hourInputNode.focus()
   }
 
   handleClearTime() {
