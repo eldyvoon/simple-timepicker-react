@@ -2,7 +2,7 @@
   "author": "eldyvoon",
   "name": "simple-timepicker-react",
   "description": "A simple timepicker React component, imitate html5 datetime-local.",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "main": "lib/simple-timepicker.js",
   "scripts": {
     "start": "webpack-dev-server --env=dev --progress --profile --colors",
